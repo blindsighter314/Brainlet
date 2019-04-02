@@ -1,0 +1,6 @@
+# create a descending range from a value
+# 1~n
+
+PARTITION 6
+
+RANGE DES 5

@@ -1,0 +1,21 @@
+# z = MUX(a, x, y)
+# [a] [x] [y] [z]
+
+PARTITION 4
+
+SET 1
+STEP RIGHT
+SET 0
+STEP RIGHT
+SET 1
+STEP RIGHT
+
+IF [0] = 1
+	SET [2]
+END
+
+IF [0] = 0
+	SET [1]
+END
+
+PRINTDECMEMORY

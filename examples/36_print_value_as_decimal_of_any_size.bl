@@ -1,0 +1,39 @@
+# Print value of cell x as number for ANY sized cell (ie 8bit, 16bit, etc)
+# For this you would have to store multiple didgets across an array as each cell has a hard limit of 255
+
+PARTITION 17
+
+SET 214
+STEP RIGHT
+SET 190
+STEP RIGHT
+SET 152
+STEP RIGHT
+SET 161
+STEP RIGHT
+SET 175
+STEP RIGHT
+SET 111
+STEP RIGHT
+SET 152
+STEP RIGHT
+SET 164
+STEP RIGHT
+SET 118
+STEP RIGHT
+SET 158
+STEP RIGHT
+SET 168
+STEP RIGHT
+SET 155
+STEP RIGHT
+SET 111
+STEP RIGHT
+SET 175
+STEP RIGHT
+SET 229
+STEP RIGHT
+SET 138
+STEP RIGHT
+
+PRINTDECMEMORY

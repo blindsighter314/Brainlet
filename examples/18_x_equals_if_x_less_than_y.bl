@@ -1,0 +1,21 @@
+# x = x < y
+
+PARTITION 3
+
+SET 5
+STEP RIGHT
+SET 5
+STEP LEFT
+
+IF [0] < [1]
+	SET 1
+	JUMP 2
+	SET 1
+	JUMP 0
+END
+
+IF [2] = 0
+	SET 0
+END
+
+PRINTDECMEMORY

@@ -1,0 +1,24 @@
+# x = x and y
+
+PARTITION 3
+
+SET 1
+STEP RIGHT
+SET 1
+STEP LEFT
+
+IF [CUR] = 1
+	IF [1] = 1
+		JUMP 2
+		SET 1
+		JUMP 0
+	END
+END
+
+SET 0
+
+IF [2] = 1
+	SET 1
+END
+
+PRINTDECMEMORY

@@ -1,0 +1,8 @@
+# while(c=getchar()!=X)
+# This script will demand inputs until the user inputs the letter 'a'
+
+INPUT
+
+CONDITIONALJUMP [CUR] != 97 4
+
+PRINT

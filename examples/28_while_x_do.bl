@@ -1,0 +1,8 @@
+# while x != 0 do
+
+SET 5
+SUB 1
+
+CONDITIONALJUMP [CUR] != 1 4
+
+PRINT DEC

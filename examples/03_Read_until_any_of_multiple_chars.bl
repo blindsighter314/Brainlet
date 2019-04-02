@@ -1,0 +1,33 @@
+# Read until any multiple chars
+# The following will print the string as it reads until it finds the characters N O
+
+PARTITION 5
+
+SET 65
+
+STEP RIGHT
+SET 78
+STEP RIGHT
+SET 79
+STEP RIGHT
+
+SET 66
+
+JUMP 0
+
+LOOP 4
+	IF [CUR] = 78
+		STEP RIGHT
+		IF [CUR] = 79
+			BREAKLOOP
+		END
+		STEP LEFT
+	END
+
+	PRINT CHAR
+	STEP RIGHT
+END
+
+JUMP 0
+NEWLINE
+PRINTMEMORY

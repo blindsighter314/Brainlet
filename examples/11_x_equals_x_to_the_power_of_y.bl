@@ -1,0 +1,17 @@
+# x = (x ^ y)
+# [copy buffer][y][x]
+
+PARTITION 3
+
+STEP RIGHT
+SET 3
+STEP RIGHT
+SET 4
+
+COPY
+SET 1
+LOOP [1]
+	PROD [0]
+END
+
+PRINTDECMEMORY

@@ -1,0 +1,14 @@
+# x = x or y
+
+PARTITION 2
+
+SET 0
+STEP RIGHT
+SET 1
+STEP LEFT
+
+IF [1] = 1
+	SET 1
+END
+
+PRINTDECMEMORY

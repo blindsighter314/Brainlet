@@ -1,0 +1,43 @@
+# I didn't really understand this one, so I wrote an inverter and a logic check.
+# x = not x
+
+PARTITION 2
+
+# if x = 1 then x = 0 else x = 1;
+
+SET 1
+COPY
+STEP RIGHT
+PASTE
+STEP LEFT
+
+IF [0] = 1
+	SET 0
+	STEP RIGHT
+	SET 5
+	STEP LEFT
+END
+
+IF [1] != 5
+	SET 1
+END
+
+SET 0
+STEP RIGHT
+SET 0
+STEP LEFT
+
+
+
+
+# if x = 5 then y = 1
+
+SET 5
+
+IF [CUR] = 5
+	STEP RIGHT
+	SET 1
+	STEP LEFT
+END
+
+PRINTDECMEMORY

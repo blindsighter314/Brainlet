@@ -1,0 +1,21 @@
+This folder contains demonstrations on how to do every algorithm on the website
+https://esolangs.org/wiki/brainfuck_algorithms
+
+Algorithms ignored:
+x = (-x) : Ignored because brainlet does not allow negative values.
+
+x = y(z) (1-d array) : This is really close to x(y) = z (1-d array) which I do in number 15
+
+x(y) = z (1-d array) (1 cell/array element) : This is challenge 15 but easier.
+
+x = y(z) (1-d array) (1 cell/array element) : Same reason.
+
+z = sign(x-y) : Brainlet does not support negative values.
+
+x = not x : Copy of challenge 13
+
+Count up with step x, from y to infinity : I don't know what that means, counting every x cell in a loop would be super easy.
+
+String to byte : This I just don't understand, all cells are a byte technically and can be converted to a char
+similarly, a congregation of cells can be interpreted as a char array (a string)
+I don't know what this challenge means, but TYPECAST is a function, so use that I guess.

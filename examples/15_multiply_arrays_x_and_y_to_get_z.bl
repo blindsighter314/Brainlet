@@ -1,0 +1,38 @@
+# I may be misunderstanding this one, but if I understand correctly...
+
+# x[2] = [10][10]
+# y[2] = [5][5]
+# z = x[2] * y[2]
+# Simple enough
+
+# My approach here is cheap as it assumes the dev knows the length of arrays and where they are in memory
+# Any ambiguity of memory locations can be remideed with memory sentinals
+# Example: Adding a zero between arrays
+# I may add a sentinal function later so that 0 or some other arbitrary number doesn't have to be taken
+
+# [clipboard] [x[1]] [x[2]] [y[1]] [y[2]] [z[1]] [z[2]]
+
+
+PARTITION 7
+
+STEP RIGHT
+SET 10
+STEP RIGHT
+SET 10
+STEP RIGHT
+SET 5
+STEP RIGHT
+SET 5
+JUMP 1
+
+COPY
+JUMP 5
+PASTE
+ADD [3]
+JUMP 2
+COPY
+JUMP 6
+PASTE
+ADD [4]
+
+PRINTDECMEMORY

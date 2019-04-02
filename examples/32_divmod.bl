@@ -1,0 +1,15 @@
+# Divmod
+# Description: A clever algorithm to compute div and mod at the same time
+# I don't know what they mean by at the same time, so I calculated div of [0] then mod of [0]
+
+PARTITION 3
+
+SET 5
+
+STEP RIGHT
+SET [0]
+DIV 2
+
+STEP RIGHT
+SET [0]
+MOD 2

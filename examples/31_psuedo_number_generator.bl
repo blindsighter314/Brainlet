@@ -1,0 +1,3 @@
+# The RAND function is kinda bad, I would suggest making your own function is randomness is necessary
+
+RAND 0 255

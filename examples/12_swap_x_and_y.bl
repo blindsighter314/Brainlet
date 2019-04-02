@@ -1,0 +1,20 @@
+# copy = x; y = x; x = copy
+# [copy buffer][y][x]
+
+PARTITION 3
+
+STEP RIGHT
+SET 10
+STEP RIGHT
+SET 20
+
+PRINTDECMEMORY
+NEWLINE
+
+STEP LEFT
+COPY
+SET [2]
+STEP RIGHT
+PASTE
+
+PRINTDECMEMORY

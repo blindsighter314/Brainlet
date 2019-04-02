@@ -1,0 +1,12 @@
+# if x do
+
+PARTITION 2
+
+SET 1
+
+IF [0] = 1
+	STEP RIGHT
+	SET 33
+	PRINT CHAR
+	STEP LEFT
+END

@@ -1,0 +1,11 @@
+# x = (x / y)
+
+PARTITION 2
+
+SET 5
+STEP RIGHT
+SET 5
+
+DIV [0]
+
+PRINTDECMEMORY
