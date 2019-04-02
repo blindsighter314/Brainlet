@@ -7,5 +7,5 @@ How to Run a Brainlet Script:
 3. Compile and run bl_main.c
 
 Todo:
-Allow any file to be passed through bl_main and interpreted.
-Create documentation.
+1. Allow any file to be passed through bl_main and interpreted.
+2. Create documentation.
