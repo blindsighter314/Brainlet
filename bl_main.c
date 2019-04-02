@@ -55,13 +55,16 @@ void execute() {
 	}
 }
 
-int main() {
+int main(int argc, char *argv[]) {
 	FILE *fp;
 	char line[10000];
 	long lineScope = 0;
 
-
-	fp = fopen("test.bl", "r");
+	if (argv[1] == 0) {
+		fp = fopen("main.bl", "r");
+	} else {
+		fp = fopen(argv[1], "r");
+	}
 		while (fgets(line, 200, fp) != NULL) {
 			if (line[0] != '\n') {
 				int paramScope = 0;
@@ -106,5 +109,10 @@ int main() {
 		}
 	fclose(fp);
 	execute();
+
+	if (argv[1] != 0) {
+		char wait[1];
+		gets(wait);
+	}
 	return 0;
 }
