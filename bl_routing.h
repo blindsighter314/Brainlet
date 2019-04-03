@@ -51,7 +51,6 @@ void routeCommand(char command[50][200]) {
 				strcpy(c[paramScope], itoa(memory[atoi(c[paramScope])], buffer, 10));
 			}
 		}
-
 		paramScope++;
 	}
 
