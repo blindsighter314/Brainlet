@@ -1,4 +1,4 @@
 # Print cells contents as an 8-bit signed decimal
 
 SET 255
-PRINTDECIMAL
+PRINT DEC
