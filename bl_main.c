@@ -111,8 +111,8 @@ int main(int argc, char *argv[]) {
 	execute();
 
 	if (argv[1] != 0) {
-		char wait[1];
-		gets(wait);
+		int wait;
+		wait = getchar();
 	}
 	return 0;
 }
