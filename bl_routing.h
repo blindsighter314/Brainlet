@@ -46,9 +46,11 @@ void routeCommand(char command[50][200]) {
 			char buffer[4];
 
 			if (strcmp(c[paramScope], "CUR") == 0) {
-				strcpy(c[paramScope], itoa(memory[blindex], buffer, 10));
+//				strcpy(c[paramScope], itoa(memory[blindex], buffer, 10));
+				sprintf(buffer, memory[blindex]);
 			} else {
-				strcpy(c[paramScope], itoa(memory[atoi(c[paramScope])], buffer, 10));
+//				strcpy(c[paramScope], itoa(memory[atoi(c[paramScope])], buffer, 10));
+				sprintf(buffer, memory[blindex]);
 			}
 		}
 		paramScope++;
