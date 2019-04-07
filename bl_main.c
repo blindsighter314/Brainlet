@@ -96,11 +96,11 @@ int main(int argc, char *argv[]) {
 				}
 
 				if (paramScope > 50) {
-					printf("Warning: Too many paramaters on line %d (Max is 50)\n", (lineScope + 1));
+					printf("Warning: Too many paramaters on line %ld (Max is 50)\n", (lineScope + 1));
 				}
 
 				if (charScope > 200) {
-					printf("Warning: Too many characters on line %d, paramater %d (Max is 200)\n", (lineScope + 1), (paramScope + 1));
+					printf("Warning: Too many characters on line %ld, paramater %d (Max is 200)\n", (lineScope + 1), (paramScope + 1));
 					printf("Be sure the last line in your script is empty!\n");
 				}
 

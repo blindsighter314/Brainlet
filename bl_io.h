@@ -9,9 +9,9 @@ void ioPrint(unsigned char mode, unsigned char single, long start, long stop) {
 	// 0: ASCII, 1: DECIMAL, 2: BINARY
 	if (single == 1) {
 		if (mode == 0) {
-			printf("%c", start);
+			printf("%c", (int)start);
 		} else if (mode == 1) {
-			printf("%d", start);
+			printf("%d", (int)start);
 		} else if (mode == 2) {
 			unsigned char bin[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 			unsigned char copier = start;
@@ -27,7 +27,7 @@ void ioPrint(unsigned char mode, unsigned char single, long start, long stop) {
 				printf("%d", bin[b]);
 			}
 		} else if (mode == 3) {
-			printf("%X", start);
+			printf("%X", (unsigned int)start);
 		}
 	} else if (single == 2) {
 		for (int i = 0; i <= memoryLimit; i++) {
