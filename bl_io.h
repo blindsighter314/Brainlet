@@ -154,7 +154,7 @@ void routeIO(char c[50][200]) {
 			long start;
 
 			if (c[2][0] == '\0') {
-				start = blindex;
+				start = memory[blindex];
 			} else {
 				start = atoi(c[2]);
 			}
